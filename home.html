@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare AI</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Skincare AI</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/upload">Upload Image</a></li>
+            <li><a href="/recommendations">Recommendations</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Personalized Skincare Journey Begins Here</h1>
+            <p>Experience AI-driven skin analysis and recommendations tailored just for you.</p>
+            <a href="/upload" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps">
+        <div class="step">
+            <img src="{{ url_for('static', filename='images/step1.png') }}" alt="Step 1">
+            <h3>Step 1</h3>
+            <p>Upload a clear selfie to analyze your skin.</p>
+        </div>
+        <div class="step">
+            <img src="{{ url_for('static', filename='images/step2.png') }}" alt="Step 2">
+            <h3>Step 2</h3>
+            <p>Our AI evaluates your skin's health metrics.</p>
+        </div>
+        <div class="step">
+            <img src="{{ url_for('static', filename='images/step3.png') }}" alt="Step 3">
+            <h3>Step 3</h3>
+            <p>Receive personalized skincare recommendations.</p>
+        </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section class="info-cards">
+        <div class="card">
+            <div class="card-text">
+                <h3>Advanced Skin Analysis</h3>
+                <p>Utilizing cutting-edge AI to assess over 15 skin health metrics for a comprehensive analysis.</p>
+            </div>
+            <div class="card-image">
+                <img src="{{ url_for('static', filename='images/analysis.jpg') }}" alt="Skin Analysis">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-text">
+                <h3>Tailored Recommendations</h3>
+                <p>Get product suggestions that match your unique skin profile and concerns.</p>
+            </div>
+            <div class="card-image">
+                <img src="{{ url_for('static', filename='images/recommendations.jpg') }}" alt="Recommendations">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!--  -->
+    </footer>
+</body>
+</html>
